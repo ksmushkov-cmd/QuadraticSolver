@@ -42,6 +42,14 @@ namespace QuadraticSolver {
       this.Controls.Add(lblB); this.Controls.Add(txtB);
       this.Controls.Add(lblC); this.Controls.Add(txtC);
 
+      lblStatus = new Label {
+        Location = new Point(15, 115),
+        AutoSize = true,
+        Text = "",
+        ForeColor = Color.Black
+      };
+      this.Controls.Add(lblStatus);
+
       lblResult = new Label {
         Location = new Point(15, 130),
         Size = new Size(650, 200),
